@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:widgets_app/config/menu/menu_items.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -52,7 +53,7 @@ class CustomListItem extends StatelessWidget {
       ),
       onTap: () {
         // Navigate to other screen
-        Navigator.of(context).pushNamed(items[index].link);
+        return context.go(items[index].link);
       },
       splashColor: colors.primary.withOpacity(0.2),
     );
