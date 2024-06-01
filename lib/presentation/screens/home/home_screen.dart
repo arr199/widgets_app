@@ -53,7 +53,7 @@ class CustomListItem extends StatelessWidget {
       ),
       onTap: () {
         // Navigate to other screen
-        return context.go(items[index].link);
+        context.go(items[index].link);
       },
       splashColor: colors.primary.withOpacity(0.2),
     );
