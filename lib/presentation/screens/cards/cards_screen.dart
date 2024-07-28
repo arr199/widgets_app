@@ -150,6 +150,7 @@ class _CardType3 extends StatelessWidget {
         children: [
           Image.network(
             "https://picsum.photos/id/${elevation.toInt()}/600/250",
+            
             fit: BoxFit.contain,
           ),
           Align(
