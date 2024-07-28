@@ -144,13 +144,13 @@ class _CardType3 extends StatelessWidget {
   Widget build(BuildContext context) {
     final color = Theme.of(context).colorScheme;
     return Card(
+      elevation: elevation,
       clipBehavior: Clip.hardEdge,
       child: Stack(
         children: [
           Image.network(
             "https://picsum.photos/id/${elevation.toInt()}/600/250",
-            height: 350,
-            fit: BoxFit.cover,
+            fit: BoxFit.contain,
           ),
           Align(
             alignment: Alignment.topRight,
