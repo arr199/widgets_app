@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 import 'package:widgets_app/config/menu/menu_items.dart';
 
 class HomeScreen extends StatelessWidget {
+  static const String name = "home_screen";
   const HomeScreen({super.key});
 
   @override
@@ -53,7 +54,7 @@ class CustomListItem extends StatelessWidget {
       ),
       onTap: () {
         // Navigate to other screen
-        context.go(items[index].link);
+        context.push(items[index].link);
       },
       splashColor: colors.primary.withOpacity(0.2),
     );

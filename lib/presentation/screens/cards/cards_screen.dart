@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class CardsScreen extends StatelessWidget {
+  static const String name = "cards_screen";
   const CardsScreen({super.key});
 
   @override
@@ -8,6 +9,12 @@ class CardsScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Cards Screen'),
+        leading: IconButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          icon: const Icon(Icons.arrow_back),
+        ),
       ),
       body: const Placeholder(),
     );
