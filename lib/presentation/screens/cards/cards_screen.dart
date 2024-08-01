@@ -160,6 +160,7 @@ class _CardType3 extends StatelessWidget {
                   color: Colors.white,
                   borderRadius:
                       BorderRadius.only(bottomLeft: Radius.circular(10))),
+              
               child: IconButton(
                 onPressed: () {},
                 icon: const Icon(Icons.more_vert),
