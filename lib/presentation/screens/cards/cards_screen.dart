@@ -140,10 +140,9 @@ class _CardType3 extends StatelessWidget {
     required this.elevation,
   });
 
-
   @override
   Widget build(BuildContext context) {
-    final color = Theme.of(context).colorScheme;
+    // final color = Theme.of(context).colorScheme;
     return Card(
       elevation: elevation,
       clipBehavior: Clip.hardEdge,
@@ -160,7 +159,6 @@ class _CardType3 extends StatelessWidget {
                   color: Colors.white,
                   borderRadius:
                       BorderRadius.only(bottomLeft: Radius.circular(10))),
-              
               child: IconButton(
                 onPressed: () {},
                 icon: const Icon(Icons.more_vert),
