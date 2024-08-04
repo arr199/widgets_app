@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widgets_app/presentation/widgets/shared/main_appbar.dart';
 
 const cardsData = <Map<String, dynamic>>[
   {"elevation": 0.0, "label": "elevation 0"},
@@ -16,15 +17,7 @@ class CardsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Cards Screen'),
-        leading: IconButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          icon: const Icon(Icons.arrow_back),
-        ),
-      ),
+      appBar: MainAppBar(title: "Cards Screen"),
       body: const _CardsView(),
     );
   }
