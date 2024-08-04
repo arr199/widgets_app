@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widgets_app/presentation/widgets/shared/main_appbar.dart';
 
 class ButtonsScreen extends StatelessWidget {
   static const String name = "button_screen";
@@ -7,14 +8,7 @@ class ButtonsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        leading: IconButton(
-            onPressed: () {
-              Navigator.pop(context);
-            },
-            icon: const Icon(Icons.arrow_back)),
-        title: const Text('Buttons Screen'),
-      ),
+      appBar: MainAppBar(title: "Buttons Screen"),
       body: const _ButtonsContainer(),
     );
   }
