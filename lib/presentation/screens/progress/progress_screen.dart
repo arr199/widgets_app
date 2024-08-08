@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../../widgets/shared/main_appbar.dart';
 
 class ProgressScreen extends StatelessWidget {
