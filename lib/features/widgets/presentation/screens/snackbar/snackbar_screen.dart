@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:go_router/go_router.dart';
-import 'package:widgets_app/presentation/widgets/shared/main_appbar.dart';
+import 'package:widgets_app/features/widgets/presentation/widgets/shared/main_appbar.dart';
 
 class SnackbarScreen extends StatelessWidget {
   static const String name = "snackbar_screen";

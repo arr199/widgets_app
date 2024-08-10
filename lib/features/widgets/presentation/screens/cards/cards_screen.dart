@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:widgets_app/presentation/widgets/shared/main_appbar.dart';
+import 'package:widgets_app/features/widgets/presentation/widgets/shared/main_appbar.dart';
 
 const cardsData = <Map<String, dynamic>>[
   {"elevation": 0.0, "label": "elevation 0"},

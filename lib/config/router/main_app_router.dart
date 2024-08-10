@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:widgets_app/presentation/screens/screens.dart';
+import 'package:widgets_app/features/widgets/presentation/screens/screens.dart';
 
 final GoRouter MainAppRouter = GoRouter(
   initialLocation: "/",
@@ -38,6 +38,20 @@ final GoRouter MainAppRouter = GoRouter(
       name: SnackbarScreen.name,
       builder: (context, state) {
         return const SnackbarScreen();
+      },
+    ),
+    GoRoute(
+      path: "/animated_container",
+      name: AnimatedScreen.name,
+      builder: (context, state) {
+        return const AnimatedScreen();
+      },
+    ),
+    GoRoute(
+      path: "/ui_controls",
+      name: AnimatedScreen.name,
+      builder: (context, state) {
+        return const UiControlsScreen();
       },
     )
   ],
