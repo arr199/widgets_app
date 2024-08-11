@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 
 final List<Color> colorList = [
+  Colors.blue,
   Colors.black,
   Colors.blueAccent,
   Colors.redAccent,

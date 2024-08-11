@@ -45,7 +45,7 @@ class _UiControlsViewState extends State<_UiControlsView> {
                 });
               }),
           ExpansionTile(
-            expansionAnimationStyle: AnimationStyle(curve: Curves.bounceIn),
+            expansionAnimationStyle: AnimationStyle(curve: Curves.easeIn),
             textColor: Theme.of(context).colorScheme.primary,
             title: const Text("Transports Vehicle"),
             subtitle: Text("${_transportation.name}"),

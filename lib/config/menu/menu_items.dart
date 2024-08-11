@@ -50,5 +50,11 @@ const List<MenuItems> appMenuItems = [
     subtitle: "A list of ui controls",
     link: "/ui_controls",
     icon: Icons.card_giftcard,
+  ),
+  MenuItems(
+    title: "App tutorial",
+    subtitle: "How to use the app",
+    link: "/app_tutorial",
+    icon: Icons.school,
   )
 ];
