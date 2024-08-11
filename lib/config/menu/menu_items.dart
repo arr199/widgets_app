@@ -44,5 +44,11 @@ const List<MenuItems> appMenuItems = [
     subtitle: "Animated Containers",
     link: "/animated_container",
     icon: Icons.check_box_outline_blank_outlined,
+  ),
+  MenuItems(
+    title: "Ui Controls",
+    subtitle: "A list of ui controls",
+    link: "/ui_controls",
+    icon: Icons.card_giftcard,
   )
 ];
