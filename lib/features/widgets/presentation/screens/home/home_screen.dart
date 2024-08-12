@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:widgets_app/config/menu/menu_items.dart';
+import 'package:widgets_app/features/widgets/presentation/widgets/shared/main_appbar.dart';
 
 class HomeScreen extends StatelessWidget {
+  static const String name = "home_screen";
   const HomeScreen({super.key});
 
   @override
@@ -9,9 +12,7 @@ class HomeScreen extends StatelessWidget {
     const items = appMenuItems;
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Flutter + Material 3"),
-      ),
+      appBar: MainAppBar(title: "Widgets App"),
       body: ListView.builder(
         itemCount: items.length,
         itemBuilder: (context, index) {
@@ -52,7 +53,7 @@ class CustomListItem extends StatelessWidget {
       ),
       onTap: () {
         // Navigate to other screen
-        Navigator.of(context).pushNamed(items[index].link);
+        context.push(items[index].link);
       },
       splashColor: colors.primary.withOpacity(0.2),
     );
