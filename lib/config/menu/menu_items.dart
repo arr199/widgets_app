@@ -56,5 +56,11 @@ const List<MenuItems> appMenuItems = [
     subtitle: "How to use the app",
     link: "/app_tutorial",
     icon: Icons.school,
+  ),
+  MenuItems(
+    title: "Infinite Scroll",
+    subtitle: "Image Gallery with infinite scroll",
+    link: "/infinite_scroll",
+    icon: Icons.image,
   )
 ];
