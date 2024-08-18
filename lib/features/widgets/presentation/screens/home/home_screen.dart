@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:widgets_app/config/menu/menu_items.dart';
+import 'package:widgets_app/features/widgets/presentation/widgets/shared/left_side_bar.dart';
 import 'package:widgets_app/features/widgets/presentation/widgets/shared/main_appbar.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -10,8 +11,13 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     const items = appMenuItems;
+    final key = GlobalKey<ScaffoldState>();
 
     return Scaffold(
+      key: key,
+      drawer: LeftSideBar(
+        scaffoldKey: key,
+      ),
       appBar: MainAppBar(title: "Widgets App"),
       body: ListView.builder(
         itemCount: items.length,
