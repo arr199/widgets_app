@@ -62,5 +62,17 @@ const List<MenuItems> appMenuItems = [
     subtitle: "Image Gallery with infinite scroll",
     link: "/infinite_scroll",
     icon: Icons.image,
+  ),
+  MenuItems(
+    title: "Counter",
+    subtitle: "A simple counter using Riverpod",
+    link: "/counter",
+    icon: Icons.plus_one,
+  ),
+  MenuItems(
+    title: "Theme Changer",
+    subtitle: "Change the theme of the application",
+    link: "/theme_changer",
+    icon: Icons.palette,
   )
 ];

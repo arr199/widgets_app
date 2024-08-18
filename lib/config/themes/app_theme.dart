@@ -8,15 +8,15 @@ final List<Color> colorList = [
   Colors.blueAccent,
   Colors.redAccent,
   Colors.greenAccent,
-  Colors.white,
+  Colors.orange,
 ];
 
 class AppTheme {
   final int selectedColor;
+  final bool isDarkMode;
 
-  AppTheme({
-    this.selectedColor = 0,
-  })  : assert(
+  AppTheme({required this.selectedColor, required this.isDarkMode})
+      : assert(
           selectedColor < colorList.length,
           "selectedColor must be a less than ${colorList.length}",
         ),
@@ -25,6 +25,7 @@ class AppTheme {
   ThemeData getTheme() {
     return ThemeData(
         useMaterial3: true,
+        brightness: isDarkMode ? Brightness.dark : Brightness.light,
         colorSchemeSeed: colorList[selectedColor],
         appBarTheme: const AppBarTheme(centerTitle: true));
   }
