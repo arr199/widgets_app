@@ -17,7 +17,7 @@ class MainApp extends ConsumerWidget {
     final isDarkMode = ref.watch(darkModeProvider);
 
     return MaterialApp.router(
-      routerConfig: MainAppRouter,
+      routerConfig: mainAppRouter,
       theme: AppTheme(selectedColor: selectedTheme, isDarkMode: isDarkMode)
           .getTheme(),
       debugShowCheckedModeBanner: false,
