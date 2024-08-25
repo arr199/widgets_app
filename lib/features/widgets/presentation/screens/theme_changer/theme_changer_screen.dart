@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:widgets_app/config/themes/app_theme.dart';
-import 'package:widgets_app/features/widgets/presentation/providers/counter/darkmode_provider.dart';
+import 'package:widgets_app/features/widgets/presentation/providers/counter/theme_provider.dart';
 import 'package:widgets_app/features/widgets/presentation/widgets/shared/main_appbar.dart';
 
 class ThemeChangerScreen extends StatelessWidget {
@@ -23,8 +23,7 @@ class _ThemeChangerView extends ConsumerWidget {
   @override
   Widget build(BuildContext context, ref) {
     final colorsList = ref.watch(colorListProvider);
-    final currentTheme = ref.watch(selectedThemeProvider);
-    
+    final currentTheme = ref.watch(themeNotifierProvider).selectedColor;
 
     return Scaffold(
       appBar: MainAppBar(title: "Theme Changer"),
@@ -41,7 +40,7 @@ class _ThemeChangerView extends ConsumerWidget {
             value: index,
             groupValue: currentTheme,
             onChanged: (value) {
-              ref.read(selectedThemeProvider.notifier).update((state) => index);
+              ref.read(themeNotifierProvider.notifier).changeThemeColor(index);
             },
           );
         },
