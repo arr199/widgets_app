@@ -5,7 +5,6 @@ import 'package:widgets_app/features/widgets/presentation/providers/counter/them
 
 class CounterScreen extends ConsumerWidget {
   static const name = "counter_screen";
-
   const CounterScreen({super.key});
 
   @override
